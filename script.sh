@@ -2,6 +2,8 @@
 
 output=`python3 hello.py`
 
+output="${output//$'\n'/<br />}"
+
 touch brianna_coleman.html
 cat > brianna_coleman.html << EOF
 <!DOCTYPE html>
